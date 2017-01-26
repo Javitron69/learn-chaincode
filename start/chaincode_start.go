@@ -80,7 +80,7 @@ func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function strin
 }
 
 
-// Read
+// Read Read
 func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
     var name, jsonResp string
     var err error
@@ -99,7 +99,7 @@ func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) 
     return valAsbytes, nil
 }
 
-// Write
+// Write Write
 func (t *SimpleChaincode) write(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
     var name, value string
     var err error
